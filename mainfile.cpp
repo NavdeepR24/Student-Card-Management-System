@@ -1,4 +1,8 @@
 #include<iostream>
+#include<string>
+#include<conio.h>
+
+
 
 class Student {
     int roll;
@@ -9,12 +13,11 @@ class Student {
     float Maths_marks;
     float Science_marks;
 public:
-    void input() {
+    void setmarks() {
         std::cout << "Enter roll number: ";
         std::cin >> roll;
-        std::cout << "Enter name: ";
-        std::cin >> name;
-        // Assuming each subject is out of 100
+        std::cout << "The length of the name must be less then 20 characters\nEnter the name of the student: ";
+        std::getline(std::cin, name);
         std::cout << "Enter English marks: ";
         std::cin >> English_marks;
         std::cout << "Enter Hindi marks: ";
@@ -48,11 +51,71 @@ public:
         std::cout << "Name: " << name << std::endl;
         std::cout << name << " has secured " << persentage() << "% and is graded " << grade() << std::endl;
     }
-
     
 };
 
 int main(){
+    int enterRollNo;
+
+    system("cls");
+
+    Student s1;
+
+    // s1.setmarks();
+
+    while(true){
+
+        system("cls");
+
+        int choice;
+
+        std::cout<<"\t\t***** WECLOME TO THE SYSTEM *****\t\t"<<std::endl<<std::endl;
+        std::cout<<"\t What can I do for you"<<std::endl;
+        std::cout<<"1\tPress one for adding a new student in the system"<<std::endl;
+        std::cout<<"2\tPress two for deleting a student form the system"<<std::endl;
+        std::cout<<"3\tPress three for searching a student in the system"<<std::endl;
+        std::cout<<"4\tPress four for getting the list of all the names and roll numbers of all the students"<<std::endl;
+        std::cout<<"5\tPress five for exiting the system"<<std::endl;
+
+        std::cin>>choice;
+
+        switch (choice)
+        {
+        case 1 :
+            /* code */
+            break;
+
+        case 2 :
+            /* code */
+            break;
+
+        case 3 :
+            /* code */
+            break;
+
+        case 4 :
+            /* code */
+            break;
+
+        case 5 :
+            
+            std::cout<<"Thanks for Visiting!..."<<std::endl;
+
+            exit(0);
+            break;
+        
+        default:
+
+            std::cout<<"Invlaid user input!"<<std::endl;
+            std::cout<<"Press Enter and try again..."<<std::endl;
+
+            getch();
+
+            break;
+        }
+
+
+    }
 
     return 0;
 }
