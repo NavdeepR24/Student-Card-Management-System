@@ -350,4 +350,5 @@ For support and questions:
 ---
  
 **Last Updated**: 2025
+<br>
 **Author**: Navdeep Singh  
