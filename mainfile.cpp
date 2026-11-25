@@ -435,6 +435,8 @@ public:
     }
 };
 
+/*from here the main function starts*/
+
 int main() {
     Student s1;
     s1.menu();
